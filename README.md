@@ -8,8 +8,13 @@ Compartilho projetos acadêmicos e pessoais, com foco em entender as decisões d
 | Projeto | O que você encontra | Tecnologias |
 |---|---|---|
 | [Previsão de demanda e estoque](https://github.com/LucasSMFerreira/Previsao-demanda-estoque) | Cadastro de lojas e produtos, vendas, previsão e apoio à reposição. Edição local com testes e comparação temporal de modelos. | Python, Streamlit, PostgreSQL, TimescaleDB |
+| [Reposição automática de estoque](https://github.com/LucasSMFerreira/Reposi-o-Automatica-Estoque) | Painel leve para acompanhar prioridades, calcular compras sugeridas e registrar decisões. | Python, Tkinter, CSV/JSON |
 | [Clínica veterinária](https://github.com/LucasSMFerreira/Sistema-de-Clinica-Veterinaria) | Estudo de atendimento veterinário aplicando State, Observer e Decorator. | Java, orientação a objetos |
 | [Site para nutricionista](https://github.com/LucasSMFerreira/LandingPageNutri) | Site institucional com apresentação, serviços e contato. | HTML, CSS, interface responsiva |
+
+## Projetos conectados
+
+A [Previsão de demanda e estoque](https://github.com/LucasSMFerreira/Previsao-demanda-estoque) estima o consumo futuro; a [Reposição automática de estoque](https://github.com/LucasSMFerreira/Reposi-o-Automatica-Estoque) usa consumo, saldo e prazo do fornecedor para sugerir quando e quanto comprar. São módulos complementares, mantidos em repositórios separados e preparados para compor uma aplicação final de gestão. A integração automática entre eles é uma próxima etapa.
 
 ## Estudos de Python
 
