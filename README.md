@@ -9,12 +9,19 @@ Compartilho projetos acadêmicos e pessoais, com foco em entender as decisões d
 |---|---|---|
 | [Previsão de demanda e estoque](https://github.com/LucasSMFerreira/Previsao-demanda-estoque) | Cadastro de lojas e produtos, vendas, previsão e apoio à reposição. Edição local com testes e comparação temporal de modelos. | Python, Streamlit, PostgreSQL, TimescaleDB |
 | [Reposição automática de estoque](https://github.com/LucasSMFerreira/Reposi-o-Automatica-Estoque) | Painel leve para acompanhar prioridades, calcular compras sugeridas e registrar decisões. | Python, Tkinter, CSV/JSON |
+| [Contas a Pagar](https://github.com/LucasSMFerreira/Controle-Contas) | Vencimentos, contas recorrentes, comprovantes e API local para compras aprovadas. | Python, Tkinter, JSON, API local |
 | [Clínica veterinária](https://github.com/LucasSMFerreira/Sistema-de-Clinica-Veterinaria) | Estudo de atendimento veterinário aplicando State, Observer e Decorator. | Java, orientação a objetos |
 | [Site para nutricionista](https://github.com/LucasSMFerreira/LandingPageNutri) | Site institucional com apresentação, serviços e contato. | HTML, CSS, interface responsiva |
 
 ## Projetos conectados
 
-A [Previsão de demanda e estoque](https://github.com/LucasSMFerreira/Previsao-demanda-estoque) estima o consumo futuro; a [Reposição automática de estoque](https://github.com/LucasSMFerreira/Reposi-o-Automatica-Estoque) usa consumo, saldo e prazo do fornecedor para sugerir quando e quanto comprar. São módulos complementares, mantidos em repositórios separados e preparados para compor uma aplicação final de gestão. A integração automática entre eles é uma próxima etapa.
+Os três projetos funcionam separadamente e foram preparados como módulos de uma aplicação final de gestão:
+
+1. [Previsão de Demanda](https://github.com/LucasSMFerreira/Previsao-demanda-estoque) estima o consumo futuro.
+2. [Reposição Automática de Estoque](https://github.com/LucasSMFerreira/Reposi-o-Automatica-Estoque) sugere compras com base no saldo, consumo e prazo do fornecedor.
+3. [Contas a Pagar](https://github.com/LucasSMFerreira/Controle-Contas) acompanha vencimentos, recorrências e pagamentos registrados.
+
+A ponte local já permite que uma **compra aprovada** em Reposição crie uma conta a pagar, após informar preço e vencimento. A Previsão ainda não envia dados automaticamente aos outros módulos. Cada projeto pode ser usado sozinho, e a integração completa ficará para a aplicação final.
 
 ## Estudos de Python
 
