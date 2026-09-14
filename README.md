@@ -7,6 +7,7 @@ Compartilho projetos acadêmicos e pessoais, com foco em entender as decisões d
 
 | Projeto | O que você encontra | Tecnologias |
 |---|---|---|
+| [Software de Gestão](https://github.com/LucasSMFerreira/Software-Gestao) | Primeira versão desktop com cadastro de produtos, estoque, vendas, reposição, compras e contas no mesmo banco. Inclui executável e plano de evolução. | Python, Tkinter, SQLite |
 | [Previsão de demanda e estoque](https://github.com/LucasSMFerreira/Previsao-demanda-estoque) | Cadastro de lojas e produtos, vendas, previsão e apoio à reposição. Edição local com testes e comparação temporal de modelos. | Python, Streamlit, PostgreSQL, TimescaleDB |
 | [Reposição automática de estoque](https://github.com/LucasSMFerreira/Reposi-o-Automatica-Estoque) | Painel leve para acompanhar prioridades, calcular compras sugeridas e registrar decisões. | Python, Tkinter, CSV/JSON |
 | [Compras e Fornecedores](https://github.com/LucasSMFerreira/Compra-Fornecedores) | Pedidos de compra com aprovação, fornecedor, envio à API de Contas e registro de entrega. Exemplos isolados dos dados reais. | Python, Tkinter, JSON, API local |
@@ -15,6 +16,8 @@ Compartilho projetos acadêmicos e pessoais, com foco em entender as decisões d
 | [Site para nutricionista](https://github.com/LucasSMFerreira/LandingPageNutri) | Site institucional com apresentação, serviços e contato. | HTML, CSS, interface responsiva |
 
 ## Projetos conectados
+
+A [primeira versão do Software de Gestão](https://github.com/LucasSMFerreira/Software-Gestao) já reúne o fluxo básico dos módulos em um aplicativo desktop. Os projetos abaixo continuam como referências independentes; funções avançadas ainda serão trazidas para a versão unificada.
 
 Os quatro projetos funcionam separadamente e foram preparados como módulos de uma aplicação final de gestão:
 
