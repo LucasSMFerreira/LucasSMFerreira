@@ -1,53 +1,68 @@
 # Lucas Martins Ferreira
 
-Desenvolvedor em formação, com estudos em Java, Python, Node.js, SQL e desenvolvimento web.
-Compartilho projetos acadêmicos e pessoais, com foco em entender as decisões do código e evoluir com testes e documentação.
+**Desenvolvedor Back-end | Python · Java · SQL · IA e Automação**
 
-## Projetos em destaque
+Engenharia de Software — Universidade de Vassouras (5º período) · Armação dos Búzios, RJ
 
-| Projeto | O que você encontra | Tecnologias |
-|---|---|---|
-| [Software de Gestão](https://github.com/LucasSMFerreira/Software-Gestao) | Primeira versão desktop com cadastro de produtos, estoque, vendas, reposição, compras e contas no mesmo banco. Inclui executável e plano de evolução. | Python, Tkinter, SQLite |
-| [Previsão de demanda e estoque](https://github.com/LucasSMFerreira/Previsao-demanda-estoque) | Cadastro de lojas e produtos, vendas, previsão e apoio à reposição. Edição local com testes e comparação temporal de modelos. | Python, Streamlit, PostgreSQL, TimescaleDB |
-| [Reposição automática de estoque](https://github.com/LucasSMFerreira/Reposi-o-Automatica-Estoque) | Painel leve para acompanhar prioridades, calcular compras sugeridas e registrar decisões. | Python, Tkinter, CSV/JSON |
-| [Compras e Fornecedores](https://github.com/LucasSMFerreira/Compra-Fornecedores) | Pedidos de compra com aprovação, fornecedor, envio à API de Contas e registro de entrega. Exemplos isolados dos dados reais. | Python, Tkinter, JSON, API local |
-| [Contas a Pagar](https://github.com/LucasSMFerreira/Controle-Contas) | Vencimentos, contas recorrentes, comprovantes e API local para compras aprovadas. | Python, Tkinter, JSON, API local |
-| [Clínica veterinária](https://github.com/LucasSMFerreira/Sistema-de-Clinica-Veterinaria) | Estudo de atendimento veterinário aplicando State, Observer e Decorator. | Java, orientação a objetos |
-| [Site para nutricionista](https://github.com/LucasSMFerreira/LandingPageNutri) | Site institucional com apresentação, serviços e contato. | HTML, CSS, interface responsiva |
+[LinkedIn](https://www.linkedin.com/in/lucas-martins-450718286/) · [E-mail](mailto:lucas.martins.bz@gmail.com)
 
-## Projetos conectados
+Desenvolvo sistemas para apoiar decisões de estoque, organizar dados e automatizar operações. Conduzo projetos da definição do problema à implementação, com testes e documentação das decisões técnicas.
 
-A [primeira versão do Software de Gestão](https://github.com/LucasSMFerreira/Software-Gestao) já reúne o fluxo básico dos módulos em um aplicativo desktop. Os projetos abaixo continuam como referências independentes; funções avançadas ainda serão trazidas para a versão unificada.
+## Resultados em destaque
 
-Os quatro projetos funcionam separadamente e foram preparados como módulos de uma aplicação final de gestão:
+- **Erro de previsão 83% menor que a referência semanal**, em benchmark com dados sintéticos: Random Forest com MAE de 0,533 un./dia contra 3,095, em três janelas temporais de teste. [Metodologia e limites](https://github.com/LucasSMFerreira/previsao-vendas-estoque/blob/main/docs/benchmark/README.md).
+- **Três projetos públicos em back-end, dados e estoque**, com persistência, regras de negócio e documentação: uma aplicação web local, uma aplicação desktop e uma API REST.
+- **Segurança implementada na aplicação de previsão:** scrypt com salt individual, bloqueio após cinco tentativas e expiração de sessão por inatividade.
+- **Integração contínua com banco real:** testes de inicialização, isolamento de contas e importação idempotente em PostgreSQL/TimescaleDB descartável no GitHub Actions.
 
-1. [Previsão de Demanda](https://github.com/LucasSMFerreira/Previsao-demanda-estoque) estima o consumo futuro. A saída ainda não entra automaticamente na Reposição.
-2. [Reposição Automática de Estoque](https://github.com/LucasSMFerreira/Reposi-o-Automatica-Estoque) calcula a necessidade de compra e registra a decisão de aceitar, ajustar ou adiar.
-3. [Compras e Fornecedores](https://github.com/LucasSMFerreira/Compra-Fornecedores) importa decisões aprovadas do JSON de produtos e do CSV de decisões, cria pedidos, exige conferência e acompanha a entrega.
-4. [Contas a Pagar](https://github.com/LucasSMFerreira/Controle-Contas) recebe, pela API local, o pedido aprovado com preço e vencimento e cria a conta financeira.
+## Projetos-chave
 
-```text
-Previsão (estimativa) → Reposição (decisão) → Compras (pedido) → Contas (despesa)
-                              JSON + CSV              API HTTP local
-```
+### [Previsão de Demanda e Planejamento de Estoque](https://github.com/LucasSMFerreira/previsao-vendas-estoque)
 
-Para usar a ponte, ative **Ativar ponte** em Contas a Pagar e, em Compras, selecione um pedido aprovado e clique em **Criar conta a pagar**. O envio é um `POST /api/v1/pedidos-reposicao` para `127.0.0.1:8765` com número do pedido, SKU, produto, fornecedor, quantidade, preço unitário e vencimento. A resposta traz o identificador da conta. O número do pedido impede criar outra conta ao repetir o envio. O recebimento fica registrado em Compras; a entrada automática no estoque ainda está pendente. A Reposição também permite envio direto ao Contas, mas o fluxo pelo módulo de Compras concentra o acompanhamento do pedido.
+**Objetivo:** transformar registros de vendas em estimativas de demanda e apoio à reposição.
 
-## Estudos de Python
+- Desenvolvi uma aplicação multiusuário para registrar vendas, comparar previsões e estimar reposição, com dados separados por conta.
+- Comparei referência semanal, Random Forest e XGBoost em avaliação temporal; o Random Forest reduziu o MAE em aproximadamente 83% no cenário sintético. O resultado não representa precisão validada em vendas reais.
+- Estruturei testes automatizados, CI com banco descartável e documentação de atualização para a versão 1.0.
 
-- [Sistema bancário](https://github.com/LucasSMFerreira/SistemaBancario)
-- [Folha de pagamento](https://github.com/LucasSMFerreira/SistemaFolhadePagamento)
-- [Biblioteca](https://github.com/LucasSMFerreira/Biblioteca)
-- [Sistema de loja](https://github.com/LucasSMFerreira/SistemaLoja)
+**Stack:** Python · scikit-learn · XGBoost · SQLAlchemy · PostgreSQL/TimescaleDB · Streamlit · Docker · pytest · GitHub Actions.
 
-## Estudos de padrões de projeto
+### [Planejamento de Reposição de Estoque](https://github.com/LucasSMFerreira/reposicao-estoque)
 
-Exercícios separados por padrão para facilitar a consulta:
+**Objetivo:** calcular quando e quanto comprar, considerando prazo de entrega e restrições do fornecedor.
 
-- Criação: [Factory Method](https://github.com/LucasSMFerreira/Padrao-FactoryMethod), [Abstract Factory](https://github.com/LucasSMFerreira/Padrao-AbstractFactory) e [Singleton](https://github.com/LucasSMFerreira/Padrao-Singleton).
-- Estrutura: [Bridge](https://github.com/LucasSMFerreira/Padrao-Brigde) e [Decorator](https://github.com/LucasSMFerreira/Padrao-Decorator).
-- Comportamento: [Observer](https://github.com/LucasSMFerreira/Padr-o-Observer), [Strategy](https://github.com/LucasSMFerreira/Padrao-Strategy), [State](https://github.com/LucasSMFerreira/PadraoState), [Chain of Responsibility](https://github.com/LucasSMFerreira/Padrao-Chain-of-responsibility) e [Template Method](https://github.com/LucasSMFerreira/TemplateMethod).
+- Separei regras de negócio, interface e persistência para facilitar manutenção e evolução.
+- Implementei ajuste à compra mínima e ao múltiplo do fornecedor, com registro das decisões de aceitar, ajustar ou adiar.
+- Entreguei interface desktop e opção por terminal, com testes e sem dependências externas à biblioteca padrão do Python.
 
-## Contato
+**Stack:** Python · Tkinter · JSON · CSV · unittest.
 
-[LinkedIn](https://www.linkedin.com/in/lucas-martins-450718286/)
+### [Data Remo API](https://github.com/LucasSMFerreira/data-remo-api)
+
+**Objetivo:** organizar o histórico de atletas, treinos e indicadores de desempenho no remo.
+
+- Estruturei 11 endpoints para cadastro, consultas por período, ranking e resumo mensal.
+- Organizei o código em controllers, serviços, repositórios e DTOs, com persistência relacional.
+- Apliquei Factory, Observer e Decorator em exercícios do domínio.
+
+**Stack:** Java 21 · Spring Boot · Spring Data JPA · PostgreSQL · Maven.
+
+**Estágio:** protótipo acadêmico; autenticação das rotas, migrações e testes funcionais são evoluções pendentes.
+
+## Liderança e iniciativa
+
+- **Fundador da SmartShop:** defini proposta de produto, modelo de assinatura e preços para uma comunidade e loja de ferramentas digitais.
+- **Criador do Orquestra:** conduzo concepção, desenvolvimento, distribuição e suporte de uma ferramenta de geração de sites em volume com IA.
+- **Automação de operações:** implementei bots em nuvem para automatizar venda e entrega, dispensando intervenção manual por pedido.
+- **Organização de entregas:** formação certificada em Scrum, com foco em priorização e evolução incremental.
+
+## Stack
+
+- **Linguagens:** Python · Java · SQL.
+- **Back-end e dados:** Spring Boot · Flask · APIs REST · PostgreSQL · TimescaleDB · SQLAlchemy.
+- **IA e ML:** scikit-learn · XGBoost · pandas · IA generativa · agentes de IA.
+- **Qualidade e entrega:** pytest · unittest · GitHub Actions · Docker · Git.
+
+---
+
+Aberto a oportunidades em **back-end, automação e IA**.
