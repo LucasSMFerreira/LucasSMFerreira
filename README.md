@@ -8,14 +8,54 @@ Engenharia de Software — Universidade de Vassouras (5º período) · Armação
 
 Desenvolvo sistemas para apoiar decisões de estoque, organizar dados e automatizar operações. Conduzo projetos da definição do problema à implementação, com testes e documentação das decisões técnicas.
 
+## Linguagens e ferramentas
+
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" title="Python" width="36" height="36" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" title="Java" width="36" height="36" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="FastAPI" title="FastAPI" width="36" height="36" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Boot" title="Spring Boot" width="36" height="36" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" width="36" height="36" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg" alt="SQLAlchemy" title="SQLAlchemy" width="36" height="36" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="pandas" title="pandas" width="36" height="36" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="scikit-learn" title="scikit-learn" width="36" height="36" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" alt="Streamlit" title="Streamlit" width="36" height="36" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" title="Docker" width="36" height="36" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" title="Git" width="36" height="36" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" title="GitHub Actions" width="36" height="36" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original.svg" alt="pytest" title="pytest" width="36" height="36" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg" alt="Ubuntu Server" title="Ubuntu Server" width="36" height="36" />
+</p>
+
+- **Linguagens:** Python · Java · SQL · HTML · CSS · JavaScript.
+- **Back-end e APIs:** FastAPI · Pydantic · Uvicorn · Spring Boot · Spring Data JPA · APIs REST.
+- **Dados e persistência:** PostgreSQL · pgvector · TimescaleDB · SQLAlchemy.
+- **IA e aprendizado de máquina:** Ollama · RAG · embeddings · nomic-embed-text · Qwen 2.5 · scikit-learn · XGBoost · pandas.
+- **Interfaces:** Streamlit · Tkinter.
+- **Qualidade e entrega:** pytest · unittest · Ruff · Git · GitHub Actions · CI/CD.
+- **Infraestrutura:** Docker · Docker Compose · Ubuntu Server · Tailscale · SSH · runner self-hosted.
+
 ## Resultados em destaque
 
 - **Erro de previsão 83% menor que a referência semanal**, em benchmark com dados sintéticos: Random Forest com MAE de 0,533 un./dia contra 3,095, em três janelas temporais de teste. [Metodologia e limites](https://github.com/LucasSMFerreira/previsao-vendas-estoque/blob/main/docs/benchmark/README.md).
-- **Três projetos públicos em back-end, dados e estoque**, com persistência, regras de negócio e documentação: uma aplicação web local, uma aplicação desktop e uma API REST.
+- **Quatro projetos públicos em back-end, automação e IA**, incluindo um assistente RAG com modelos locais, aplicações de estoque e uma API Java.
 - **Segurança implementada na aplicação de previsão:** scrypt com salt individual, bloqueio após cinco tentativas e expiração de sessão por inatividade.
 - **Integração contínua com banco real:** testes de inicialização, isolamento de contas e importação idempotente em PostgreSQL/TimescaleDB descartável no GitHub Actions.
 
 ## Projetos-chave
+
+### [Assistente de Estudos com IA](https://github.com/LucasSMFerreira/assistente-estudos)
+
+**Objetivo:** consultar PDFs de aula por perguntas em linguagem natural, com indicação do documento e da página.
+
+- Implementei um fluxo RAG com ingestão de PDFs, embeddings e busca vetorial no PostgreSQL com pgvector, integrado a modelos locais pelo Ollama.
+- Comparei quatro configurações de divisão de texto em um conjunto de 15 perguntas: o baseline alcançou Acerto@4 de 73,3% e MRR de 0,70. A avaliação é pequena e mede a recuperação das fontes, não a precisão final das respostas.
+- Estruturei CI com Ruff e pytest e deploy automatizado em servidor Ubuntu próprio, com Docker e runner self-hosted.
+
+**Stack:** Python · FastAPI · Pydantic · Uvicorn · PostgreSQL · pgvector · SQLAlchemy · Ollama · Docker Compose · pytest · Ruff · GitHub Actions · Ubuntu Server · Tailscale.
+
+**Limite atual:** respostas levam de 1 a 3 minutos no hardware local sem GPU, conforme a documentação do projeto.
+
 
 ### [Previsão de Demanda e Planejamento de Estoque](https://github.com/LucasSMFerreira/previsao-vendas-estoque)
 
@@ -55,13 +95,6 @@ Desenvolvo sistemas para apoiar decisões de estoque, organizar dados e automati
 - **Criador do Orquestra:** conduzo concepção, desenvolvimento, distribuição e suporte de uma ferramenta de geração de sites em volume com IA.
 - **Automação de operações:** implementei bots em nuvem para automatizar venda e entrega, dispensando intervenção manual por pedido.
 - **Organização de entregas:** formação certificada em Scrum, com foco em priorização e evolução incremental.
-
-## Stack
-
-- **Linguagens:** Python · Java · SQL.
-- **Back-end e dados:** Spring Boot · Flask · APIs REST · PostgreSQL · TimescaleDB · SQLAlchemy.
-- **IA e ML:** scikit-learn · XGBoost · pandas · IA generativa · agentes de IA.
-- **Qualidade e entrega:** pytest · unittest · GitHub Actions · Docker · Git.
 
 ---
 
