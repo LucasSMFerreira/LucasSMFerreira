@@ -30,7 +30,7 @@ Desenvolvo sistemas para apoiar decisões de estoque, organizar dados e automati
 - **Linguagens:** Python · Java · SQL · HTML · CSS · JavaScript.
 - **Back-end e APIs:** FastAPI · Pydantic · Uvicorn · Spring Boot · Spring Data JPA · APIs REST.
 - **Dados e persistência:** PostgreSQL · pgvector · TimescaleDB · SQLAlchemy.
-- **IA e aprendizado de máquina:** Ollama · RAG · embeddings · nomic-embed-text · Qwen 2.5 · scikit-learn · XGBoost · pandas.
+- **IA e Machine Learning:** Ollama · RAG · embeddings · nomic-embed-text · Qwen 2.5 · scikit-learn · XGBoost · pandas.
 - **Interfaces:** Streamlit · Tkinter.
 - **Qualidade e entrega:** pytest · unittest · Ruff · Git · GitHub Actions · CI/CD.
 - **Infraestrutura:** Docker · Docker Compose · Ubuntu Server · Tailscale · SSH · runner self-hosted.
