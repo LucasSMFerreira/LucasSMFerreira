@@ -72,10 +72,19 @@ Calcula a perda de carga de tubulações e gera o memorial em PDF. Trabalho de F
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg" alt="Ubuntu Server" title="Ubuntu Server" width="32" height="32" />
 </div>
 
-## Agora estou
+## Trilhas de projetos
 
-- Evoluindo para **AI Engineer**: integração com APIs de LLM, agentes com ferramentas (tool calling) e avaliação de respostas
-- Construindo o Radar de Vagas (coleta, embeddings e alertas no Telegram)
+Cada trilha é um projeto completo, do problema ao deploy, com testes e CI.
+
+| Trilha | Projeto | Status |
+| --- | --- | --- |
+| 1 | [Assistente de Estudos com IA](https://github.com/LucasSMFerreira/assistente-estudos): RAG com avaliação medida | ✅ Concluída |
+| 2 | [Radar de Vagas com IA](https://github.com/LucasSMFerreira/radar-vagas): coleta, embeddings e alertas no Telegram | 🔄 Em andamento |
+| 3 | [Calculadora FENTRANS](https://github.com/LucasSMFerreira/calc-comprimento-equivalente): FastAPI, LLM local e memorial em PDF | 🏁 Reta final |
+| 4 | Triagem Inteligente | ⏭️ Próxima |
+| 5 | PromptLab | 📋 Planejada |
+
+Direção: **AI Engineer**, com integração a APIs de LLM, agentes com ferramentas (tool calling) e avaliação de respostas.
 
 ## Além do código
 
