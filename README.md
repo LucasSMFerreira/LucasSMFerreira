@@ -1,16 +1,14 @@
-<div align="center">
-  <img src="assets/banner.svg" width="100%" alt="Lucas Martins Ferreira — Back-end · Python · Java · SQL · IA aplicada" />
+# Lucas Martins Ferreira
 
-  <a href="https://www.linkedin.com/in/lucas-martins-450718286/"><img src="assets/btn-linkedin.svg" height="30" alt="LinkedIn" /></a>
-  <a href="mailto:lucas.martins.bz@gmail.com"><img src="assets/btn-email.svg" height="30" alt="E-mail" /></a>
-  <a href="https://github.com/LucasSMFerreira"><img src="assets/btn-local.svg" height="30" alt="Armação dos Búzios, RJ" /></a>
-</div>
+**Desenvolvedor Back-end Júnior · Python · Java · SQL · Automação com IA**
+
+[LinkedIn](https://www.linkedin.com/in/lucas-martins-450718286) · [E-mail](mailto:lucas.martins.bz@gmail.com) · Armação dos Búzios, RJ
 
 ## Sobre
 
 Desenvolvedor **back-end júnior** com foco em **IA aplicada**. Construo APIs em Python e Java, sistemas com RAG e LLMs locais, e automações que vão do problema ao deploy, com testes, CI e as decisões técnicas documentadas.
 
-Engenharia de Software na Universidade de Vassouras (5º período, conclusão em 2028) · Armação dos Búzios, RJ · **Aberto a vagas e estágios em back-end, automação e IA.**
+Engenharia de Software na Universidade de Vassouras (5º período, conclusão em 2028) · **Aberto a vagas e estágios em back-end, automação e IA.**
 
 ## Em números
 
