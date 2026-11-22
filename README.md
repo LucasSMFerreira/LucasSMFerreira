@@ -14,7 +14,7 @@ Engenharia de Software na Universidade de Vassouras (5º período, conclusão em
 
 - **Acerto@4 de 73% e MRR 0,70** na busca do meu assistente RAG, medidos em um conjunto de avaliação próprio
 - **MAE 83% menor** que a referência semanal na previsão de demanda (benchmark sintético)
-- **55 testes** e 7 releases na calculadora hidráulica, publicada na nuvem
+- **70 testes** e 9 releases na calculadora hidráulica, publicada na nuvem
 - CI no GitHub Actions em todos os projetos principais; deploy em servidor Ubuntu próprio e na nuvem (Discloud)
 
 ## Projetos em destaque
@@ -78,7 +78,7 @@ Cada trilha é um projeto completo, do problema ao deploy, com testes e CI.
 | --- | --- | --- |
 | 1 | [Assistente de Estudos com IA](https://github.com/LucasSMFerreira/assistente-estudos): RAG com avaliação medida | ✅ Concluída |
 | 2 | [Radar de Vagas com IA](https://github.com/LucasSMFerreira/radar-vagas): coleta, embeddings e alertas no Telegram | 🔄 Em andamento |
-| 3 | [Calculadora FENTRANS](https://github.com/LucasSMFerreira/calc-comprimento-equivalente): FastAPI, LLM local e memorial em PDF | 🏁 Reta final |
+| 3 | [Calculadora FENTRANS](https://github.com/LucasSMFerreira/calc-comprimento-equivalente): FastAPI, LLM local e memorial em PDF | ✅ Concluída |
 | 4 | Triagem Inteligente | ⏭️ Próxima |
 | 5 | PromptLab | 📋 Planejada |
 
