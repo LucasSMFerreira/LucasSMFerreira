@@ -74,13 +74,13 @@ Calcula a perda de carga de tubulações e gera o memorial em PDF. Trabalho de F
 
 Cada trilha é um projeto completo, do problema ao deploy, com testes e CI.
 
-| Trilha | Projeto | Status |
+| Trilha | Projeto |
 | --- | --- | --- |
-| 1 | [Assistente de Estudos com IA](https://github.com/LucasSMFerreira/assistente-estudos): RAG com avaliação medida | ✅ Concluída |
-| 2 | [Radar de Vagas com IA](https://github.com/LucasSMFerreira/radar-vagas): coleta, embeddings e alertas no Telegram | 🔄 Em andamento |
-| 3 | [Calculadora FENTRANS](https://github.com/LucasSMFerreira/calc-comprimento-equivalente): FastAPI, LLM local e memorial em PDF | ✅ Concluída |
-| 4 | Triagem Inteligente | ⏭️ Próxima |
-| 5 | PromptLab | 📋 Planejada |
+| 1 | [Assistente de Estudos com IA](https://github.com/LucasSMFerreira/assistente-estudos): RAG com avaliação medida | 
+| 2 | [Radar de Vagas com IA](https://github.com/LucasSMFerreira/radar-vagas): coleta, embeddings e alertas no Telegram | 
+| 3 | [Calculadora FENTRANS](https://github.com/LucasSMFerreira/calc-comprimento-equivalente): FastAPI, LLM local e memorial em PDF | 
+| 4 | Triagem Inteligente | 
+| 5 | PromptLab | 
 
 Direção: **AI Engineer**, com integração a APIs de LLM, agentes com ferramentas (tool calling) e avaliação de respostas.
 
